@@ -3,6 +3,11 @@ const https = require('node:https');
 const url = require('node:url');
 const config = require('./config');
 const fs = require('node:fs');
+const _data = require('./lib/data');
+
+_data.delete('test', 'hello', function (err) {
+  console.log('this was the error', err);
+});
 
 const StringDecoder = require('node:string_decoder').StringDecoder;
 
