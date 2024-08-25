@@ -18,6 +18,24 @@ environments.staging = {
     baseUrl: 'http://localhost:3000',
   },
 };
+environments.testing = {
+  httpPort: 4000,
+  httpsPort: 4001,
+  envName: 'staging',
+  hashingSecret: 'thisisasecretF',
+  maxChecks: 5,
+  twilio: {
+    accountSid: '',
+    authToken: '',
+    fromPhone: '',
+  },
+  templateGlobals: {
+    appName: 'UptimeChecker',
+    companyName: 'NotARealCompany, Inc',
+    yearCreated: '2024',
+    baseUrl: 'http://localhost:3000',
+  },
+};
 
 environments.production = {
   httpPort: 5000,
