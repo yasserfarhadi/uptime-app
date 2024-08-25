@@ -11,6 +11,12 @@ environments.staging = {
     authToken: '',
     fromPhone: '',
   },
+  templateGlobals: {
+    appName: 'UptimeChecker',
+    companyName: 'NotARealCompany, Inc',
+    yearCreated: '2024',
+    baseUrl: 'http://localhost:3000',
+  },
 };
 
 environments.production = {
@@ -23,6 +29,12 @@ environments.production = {
     accountSid: '',
     authToken: '',
     fromPhone: '',
+  },
+  templateGlobals: {
+    appName: 'UptimeChecker',
+    companyName: 'NotARealCompany, Inc',
+    yearCreated: '2024',
+    baseUrl: 'http://localhost:5000',
   },
 };
 
